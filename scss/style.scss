@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: rgba(131, 128, 128, 0.112);
+    position: sticky;
+    top: 0px;
+
+    h1 {
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease;
+    }
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.edit {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.4s ease;
+    margin: 0px 14px;
+
+    .btn {
+        margin: 10px 0;
+        transition: all 0.4s ease;
+    }
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        transform: scale(1.06);
+        background-color: rgba(206, 232, 248, 0.18);
+
+        .btn {
+            transition: all 0.4s ease;
+            background: rgb(13, 127, 241);
+            color: black;
+        }
+    }
+}
+.accordion-button{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 900;
+    font-size: 1.4rem;
+    &:hover{
+        color: rgb(7, 81, 200);
+        background: #c9edf9;
+    }
+}
+.question-content {
+    display: flex;
+    border: 1px solid #5c5c5ce3;
+    border-bottom: 0px;
+    align-items: center;
+    height: 50px;
+
+    &:first-child{
+        border-radius: 4px 4px 0 0;
+    }
+    &:last-child{
+        border-radius: 0px 0px 4px 4px;
+        border-bottom: 1px solid #5c5c5ce3;
+    }
+
+    .checkBOX {
+        width: 17px;
+        height: 17px;
+        margin: 5px 20px;
+
+    }
+
+    .qtitle {
+        display: flex;
+        padding: 7px 10px;
+        width: 20rem;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-size: 1.5rem;
+        color: rgba(8, 8, 8, 0.843);
+        font-weight: 700;
+        border-left: 1px solid #5c5c5ce3;
+        border-right: 1px solid #5c5c5ce3;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-content {
+        display: flex;
+        flex-direction: column;
+
+        .edit {
+            margin: 10px auto;
+        }
+    }
+}
