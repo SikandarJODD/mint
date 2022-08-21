@@ -62,16 +62,19 @@
 .question-content {
   display: flex;
   border: 1px solid rgba(92, 92, 92, 0.8901960784);
-  border-bottom: 0px;
   align-items: center;
   height: 50px;
+  transition: all 0.3s ease;
+}
+.question-content:hover {
+  transition: all 0.3s ease;
+  background: rgba(235, 232, 255, 0.807);
 }
 .question-content:first-child {
   border-radius: 4px 4px 0 0;
 }
 .question-content:last-child {
   border-radius: 0px 0px 4px 4px;
-  border-bottom: 1px solid rgba(92, 92, 92, 0.8901960784);
 }
 .question-content .checkBOX {
   width: 17px;
@@ -86,8 +89,6 @@
   font-size: 1.5rem;
   color: rgba(8, 8, 8, 0.843);
   font-weight: 700;
-  border-left: 1px solid rgba(92, 92, 92, 0.8901960784);
-  border-right: 1px solid rgba(92, 92, 92, 0.8901960784);
 }
 .question-content a {
   text-decoration: none;
@@ -100,12 +101,41 @@
   color: black;
 }
 
-@media (max-width: 575.98px) {
+.default {
+  background: lightgreen;
+  border: 1px solid #DDDDDD;
+  color: #333333;
+}
+
+#sortable-1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+
+#sortable-1 li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  padding-left: 1.5em;
+  font-size: 17px;
+  height: 16px;
+}
+
+@media only screen and (max-width: 450px) {
   .card-content {
     display: flex;
     flex-direction: column;
   }
   .card-content .edit {
     margin: 10px auto;
+  }
+  .question-content a {
+    font-size: 0.8rem;
+  }
+  .question-content .qtitle {
+    border-left: none;
+    border-right: none;
+    max-width: 90px;
   }
 }/*# sourceMappingURL=style.css.map */

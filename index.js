@@ -181,9 +181,10 @@ const codeContent = [
                 </div>
             </div>
 */
+
 const mainContent = document.getElementById("main-content1");
 mainContent.innerHTML = codeContent.map((elm) => {
-    console.log(elm.code_len())
+    // console.log(elm.code_len())
     return `<div class="accordion" id="${elm.id + "accordian"}">
     <div class="accordion-item">
         <h2 class="accordion-header" id="${elm.id}">
@@ -194,20 +195,25 @@ mainContent.innerHTML = codeContent.map((elm) => {
         </h2>
         <div id="${elm.id + "Collapse"}" class="accordion-collapse collapse " aria-labelledby="${elm.id}"
             data-bs-parent="main-content1">
-            <div class="accordion-body">
-                <div>
+            <div class="accordion-body" id="${elm.id + "code"}">
                     ${elm.code.map(e => {
         return `<div class="question-content">
                             <div>
                                 <input type="checkbox" name="questionid" id="${e.code_title + "question"}" class="${elm.class} checkBOX">
                             </div>
-                            <div class="qtitle"><a href="${e.link}" target="_blank">${e.code_title}</a></div>
+                            <div class="qtitle text-truncate"><a href="${e.link}" target="_blank">${e.code_title}</a></div>
                         </div>`
     }).join("")
-        }
-                </div>
-            </div>
+        } </div>
         </div>
     </div>
     `
 }).join("")
+
+$(function () {
+    $("#sortable-1").sortable();
+    codeContent.forEach(e => {
+        let m = `#${e.id}code`
+        $(m).sortable();
+    })
+});
