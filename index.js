@@ -211,7 +211,6 @@ mainContent.innerHTML = codeContent.map((elm) => {
 }).join("")
 
 $(function () {
-    $("#sortable-1").sortable();
     codeContent.forEach(e => {
         let m = `#${e.id}code`
         $(m).sortable();
