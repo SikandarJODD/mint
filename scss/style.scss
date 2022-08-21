@@ -7,9 +7,16 @@
 }
 
 .navbar {
-    background-color: rgba(131, 128, 128, 0.112);
+    color: white;
+    background: linear-gradient(to right,rgb(12, 2, 54), rgb(11, 1, 57));
     position: sticky;
     top: 0px;
+    z-index: 1;
+
+    span {
+        font-weight: bold;
+        color: rgb(6, 96, 186);
+    }
 
     h1 {
         margin: auto;
@@ -22,7 +29,6 @@
     display: flex;
     justify-content: center;
     margin-top: 3rem;
-
 }
 
 .edit {
