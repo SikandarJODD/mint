@@ -47,15 +47,18 @@
         }
     }
 }
-.accordion-button{
+
+.accordion-button {
     font-family: 'Baloo Bhaijaan 2', cursive;
     font-weight: 900;
     font-size: 1.4rem;
-    &:hover{
+
+    &:hover {
         color: rgb(7, 81, 200);
         background: #c9edf9;
     }
 }
+
 .question-content {
     display: flex;
     border: 1px solid #5c5c5ce3;
@@ -63,10 +66,11 @@
     align-items: center;
     height: 50px;
 
-    &:first-child{
+    &:first-child {
         border-radius: 4px 4px 0 0;
     }
-    &:last-child{
+
+    &:last-child {
         border-radius: 0px 0px 4px 4px;
         border-bottom: 1px solid #5c5c5ce3;
     }
@@ -81,13 +85,25 @@
     .qtitle {
         display: flex;
         padding: 7px 10px;
-        width: 20rem;
+        width: 40rem;
         font-family: 'Baloo Bhaijaan 2', cursive;
         font-size: 1.5rem;
         color: rgba(8, 8, 8, 0.843);
         font-weight: 700;
         border-left: 1px solid #5c5c5ce3;
         border-right: 1px solid #5c5c5ce3;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(10, 78, 204, 0.971);
+        transition: all 0.3s ease;
+        font-weight: 500;
+
+        &:hover {
+            transition: all 0.3s ease;
+            color: black;
+        }
     }
 }
 

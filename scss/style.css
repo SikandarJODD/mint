@@ -75,13 +75,23 @@
 .question-content .qtitle {
   display: flex;
   padding: 7px 10px;
-  width: 20rem;
+  width: 40rem;
   font-family: "Baloo Bhaijaan 2", cursive;
   font-size: 1.5rem;
   color: rgba(8, 8, 8, 0.843);
   font-weight: 700;
   border-left: 1px solid rgba(92, 92, 92, 0.8901960784);
   border-right: 1px solid rgba(92, 92, 92, 0.8901960784);
+}
+.question-content a {
+  text-decoration: none;
+  color: rgba(10, 78, 204, 0.971);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.question-content a:hover {
+  transition: all 0.3s ease;
+  color: black;
 }
 
 @media (max-width: 575.98px) {
