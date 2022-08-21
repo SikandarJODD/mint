@@ -215,4 +215,5 @@ $(function () {
         let m = `#${e.id}code`
         $(m).sortable();
     })
+    $("#sort").sortable();
 });
