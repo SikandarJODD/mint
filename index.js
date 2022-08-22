@@ -40,7 +40,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -89,7 +88,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -142,7 +140,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -199,7 +196,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -276,7 +272,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -353,7 +348,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -422,7 +416,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
@@ -485,7 +478,6 @@ const codeContent = [
         code_len: function () {
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
-            console.log(nums);
             nums.forEach(num => {
                 console.log(num.parentElement);
                 num.addEventListener("input", () => {
