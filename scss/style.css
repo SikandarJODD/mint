@@ -11,7 +11,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar span {
   font-weight: bold;
@@ -66,10 +66,6 @@
   height: 50px;
   transition: all 0.3s ease;
 }
-.question-content:hover {
-  transition: all 0.3s ease;
-  background: rgba(235, 232, 255, 0.807);
-}
 .question-content:first-child {
   border-radius: 4px 4px 0 0;
 }
@@ -120,6 +116,17 @@
   padding-left: 1.5em;
   font-size: 17px;
   height: 16px;
+}
+
+.color {
+  transition: all 0.5s ease;
+  background: linear-gradient(to left, #2df54d, rgba(28, 254, 99, 0.5882352941));
+}
+
+.count {
+  color: black !important;
+  position: absolute;
+  left: 50%;
 }
 
 @media only screen and (max-width: 450px) {

@@ -1,6 +1,6 @@
 const codeContent = [
     {
-        title: 'Arrays & Hashing',
+        title: 'Arrays & Hashing -- <span class="text-warning">LeetCode</span>',
         id: 'a1',
         class: 'check1',
         code: [
@@ -39,23 +39,29 @@ const codeContent = [
         ],
         code_len: function () {
             let i = 0;
-            let nums = document.querySelectorAll(this.class);
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
             nums.forEach(num => {
-                num.addEventListener("input", e => {
-                    if (e.target.checked) {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
                         i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
                     }
-                    else if (!e.target.checked) {
+                    if (!num.checked) {
                         i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
                     }
-                    console.log(i);
                 })
             })
-            return i;
         },
     },
     {
-        title: 'Two Pointers',
+        title: 'Two Pointers -- <span class="text-warning">LeetCode</span>',
         id: 'a2',
         class: 'check2',
         code: [
@@ -82,23 +88,29 @@ const codeContent = [
         ],
         code_len: function () {
             let i = 0;
-            let nums = document.querySelectorAll(this.class);
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
             nums.forEach(num => {
-                num.addEventListener("input", e => {
-                    if (e.target.checked) {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
                         i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
                     }
-                    else if (!e.target.checked) {
+                    if (!num.checked) {
                         i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
                     }
-                    console.log(i);
                 })
             })
-            return i;
         },
     },
     {
-        title: 'Sliding Window',
+        title: 'Sliding Window -- <span class="text-warning">LeetCode</span>',
         id: 'a3',
         class: 'check3',
         code: [
@@ -129,68 +141,381 @@ const codeContent = [
         ],
         code_len: function () {
             let i = 0;
-            let nums = document.querySelectorAll(this.class);
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
             nums.forEach(num => {
-                num.addEventListener("input", e => {
-                    if (e.target.checked) {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
                         i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
                     }
-                    else if (!e.target.checked) {
+                    if (!num.checked) {
                         i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
                     }
-                    console.log(i);
                 })
             })
-            return i;
+        },
+    },
+    {
+        title: 'Sorting -- <span class="text-warning">LeetCode</span>',
+        id: 'a4',
+        class: 'check4',
+        code: [
+            {
+                code_title: 'Majority Element',
+                link: 'https://leetcode.com/problems/majority-element/',
+            },
+            {
+                code_title: 'Missing Number',
+                link: 'https://leetcode.com/problems/missing-number/',
+            },
+            {
+                code_title: 'Intersection of Two Arrays',
+                link: 'https://leetcode.com/problems/intersection-of-two-arrays/',
+            },
+            {
+                code_title: 'Find the Difference',
+                link: 'https://leetcode.com/problems/find-the-difference/',
+            },
+            {
+                code_title: 'Minimum Moves to equal array elements',
+                link: 'https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/',
+            },
+            {
+                code_title: 'Top K Frequent Words',
+                link: 'https://leetcode.com/problems/top-k-frequent-words/',
+            },
+            {
+                code_title: 'Reveal Cards in Increasing Order',
+                link: 'https://leetcode.com/problems/reveal-cards-in-increasing-order/',
+            },
+        ],
+        code_len: function () {
+            let i = 0;
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
+            nums.forEach(num => {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
+                        i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
+                    }
+                    if (!num.checked) {
+                        i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
+                    }
+                })
+            })
+        },
+    },
+    {
+        title: 'String -- <span class="text-primary"> Codechef</span>',
+        id: 'a5',
+        class: 'check5',
+        code: [
+            {
+                code_title: 'Zero Ones Equal One Zeros',
+                link: 'https://www.codechef.com/submit/ZOOZ',
+            },
+            {
+                code_title: 'Sort the String',
+                link: 'https://www.codechef.com/submit/SRTARR',
+            },
+            {
+                code_title: 'Alternating String',
+                link: 'https://www.codechef.com/submit/ALTSTR',
+            },
+            {
+                code_title: 'Permutation in String',
+                link: 'https://www.codechef.com/submit/RECNDSTR',
+            },
+            {
+                code_title: 'Chef and String',
+                link: 'https://leetcode.com/problems/minimum-window-substring/',
+            },
+            {
+                code_title: 'Palindromic substrings',
+                link: 'https://www.codechef.com/submit/STRPALIN',
+            },
+            {
+                code_title: 'CLosest Vowels',
+                link: 'https://www.codechef.com/submit/CLOSEVOWEL',
+            },
+            {
+                code_title: 'Jewels and Stones',
+                link: 'https://www.codechef.com/submit/STONES',
+            },
+            {
+                code_title: 'Professor And Directions',
+                link: 'https://www.codechef.com/submit/DIRECTN',
+            },
+            {
+                code_title: 'Substring of a Substring',
+                link: 'https://www.codechef.com/submit/SUBSTRING',
+            },
+            {
+                code_title: 'Palindrome',
+                link: 'https://www.codechef.com/submit/PALINPAIN',
+            },
+            {
+                code_title: 'Flip the String',
+                link: 'https://www.codechef.com/submit/PALINPAIN',
+            },
+        ],
+        code_len: function () {
+            let i = 0;
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
+            nums.forEach(num => {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
+                        i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
+                    }
+                    if (!num.checked) {
+                        i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
+                    }
+                })
+            })
+        },
+    },
+    {
+        title: 'Greedy Algorithms -- <span class="text-primary"> Codechef</span>',
+        id: 'a6',
+        class: 'check6',
+        code: [
+            {
+                code_title: 'Score High',
+                link: 'https://www.codechef.com/submit/HIGHSCORE',
+            },
+            {
+                code_title: 'Smallest Numbers of Notes',
+                link: 'https://www.codechef.com/submit/FLOW005',
+            },
+            {
+                code_title: 'Maximum Length Even Subarray',
+                link: 'https://www.codechef.com/submit/MXEVNSUB',
+            },
+            {
+                code_title: 'False Number',
+                link: 'https://www.codechef.com/submit/FALSNUM',
+            },
+            {
+                code_title: 'Make them Zero',
+                link: 'https://www.codechef.com/submit/MAKEZERO',
+            },
+            {
+                code_title: 'The Two numbers',
+                link: 'https://www.codechef.com/submit/TWONUMBERS',
+            },
+            {
+                code_title: 'Maximum Score',
+                link: 'https://www.codechef.com/submit/MAXSC',
+            },
+            {
+                code_title: 'Bench Press',
+                link: 'https://www.codechef.com/submit/BENCHP',
+            },
+            {
+                code_title: 'Team Formation',
+                link: 'https://www.codechef.com/submit/TEAMFOR',
+            },
+            {
+                code_title: 'Bon Appetit',
+                link: 'https://www.codechef.com/submit/FGFS',
+            },
+            {
+                code_title: 'One Dimensional Kingdoms',
+                link: 'https://www.codechef.com/submit/ONEKING',
+            },
+            {
+                code_title: 'Broken Life',
+                link: 'https://www.codechef.com/submit/BRKNLIFE',
+            },
+        ],
+        code_len: function () {
+            let i = 0;
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
+            nums.forEach(num => {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
+                        i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
+                    }
+                    if (!num.checked) {
+                        i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
+                    }
+                })
+            })
+        },
+    },
+    {
+        title: 'Data Structures -- <span class="text-primary"> Codechef</span>',
+        id: 'a7',
+        class: 'check7',
+        code: [
+            {
+                code_title: 'Chef & Strings',
+                link: 'https://www.codechef.com/submit/RECNDSTR',
+            },
+            {
+                code_title: 'Isolation Centers',
+                link: 'https://www.codechef.com/submit/CORUS',
+            },
+            {
+                code_title: 'Maximise the Subsequence Sum',
+                link: 'https://www.codechef.com/submit/SIGNFLIP',
+            },
+            {
+                code_title: 'Average Flex',
+                link: 'https://www.codechef.com/submit/AVGFLEX',
+            },
+            {
+                code_title: 'Recipe Reconstruction',
+                link: 'https://www.codechef.com/submit/RRECIPE',
+            },
+            {
+                code_title: 'Stable Sequence',
+                link: 'https://www.codechef.com/submit/STBARR',
+            },
+            {
+                code_title: 'Rooks',
+                link: 'https://www.codechef.com/submit/RKS',
+            },
+            {
+                code_title: 'Treasure Hunting',
+                link: 'https://www.codechef.com/submit/N1',
+            },
+            {
+                code_title: 'Iron, Magnet and Wall',
+                link: 'https://www.codechef.com/submit/FEMA2',
+            },
+            {
+                code_title: 'Devu and his Class',
+                link: 'https://www.codechef.com/submit/DEVCLASS',
+            },
+        ],
+        code_len: function () {
+            let i = 0;
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
+            nums.forEach(num => {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
+                        i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
+                    }
+                    if (!num.checked) {
+                        i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
+                    }
+                })
+            })
+        },
+    },
+    {
+
+        title: 'Binary Search -- <span class="text-warning">LeetCode</span>',
+        id: 'a8',
+        class: 'check8',
+        code: [
+            {
+                code_title: 'Arranging-coins',
+                link: 'https://leetcode.com/problems/arranging-coins/',
+            },
+            {
+                code_title: 'Search Insert Position',
+                link: 'https://leetcode.com/problems/search-insert-position/',
+            },
+            {
+                code_title: 'Capacity To Ship Packages Within d Days',
+                link: 'https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/',
+            },
+            {
+                code_title: 'Koko Eating Bananas',
+                link: 'https://leetcode.com/problems/koko-eating-bananas/',
+            },
+            {
+                code_title: 'Ugli-Number-3',
+                link: 'https://leetcode.com/problems/ugly-number-iii/',
+            },
+            {
+                code_title: 'Split array larget sum',
+                link: 'https://leetcode.com/problems/split-array-largest-sum/',
+            },
+            {
+                code_title: 'Building Boxes',
+                link: 'https://leetcode.com/problems/building-boxes/',
+            },
+            {
+                code_title: 'Last day where you can still cross',
+                link: 'https://leetcode.com/problems/last-day-where-you-can-still-cross/',
+            },
+
+        ],
+        code_len: function () {
+            let i = 0;
+            let nums = document.querySelectorAll(`.${this.class}`);
+            console.log(nums);
+            nums.forEach(num => {
+                console.log(num.parentElement);
+                num.addEventListener("input", () => {
+                    if (num.checked) {
+                        i++;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
+                        num.parentElement.classList.add('color');
+
+                    }
+                    if (!num.checked) {
+                        i--;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        num.parentElement.classList.remove('color');
+
+                    }
+                })
+            })
         },
     },
 ]
-/*
-       <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        Array & Hashing
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div>
-                            <div class="question-content">
-                                <div>
-                                    <input type="checkbox" name="questionid" id="questionid" class="checkBOX">
-                                </div>
-                                <div class="qtitle">Calculate Sum</div>
-                            </div>
-                            <div class="question-content">
-                                <div>
-                                    <input type="checkbox" name="questionid" id="questionid" class="checkBOX">
-                                </div>
-                                <div class="qtitle">Valid Anagram</div>
-                            </div>
-                            <div class="question-content">
-                                <div>
-                                    <input type="checkbox" name="questionid" id="questionid" class="checkBOX">
-                                </div>
-                                <div class="qtitle">Two Sum</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-*/
 
 const mainContent = document.getElementById("main-content1");
 mainContent.innerHTML = codeContent.map((elm) => {
-    // console.log(elm.code_len())
     return `<div class="accordion" id="${elm.id + "accordian"}">
     <div class="accordion-item">
         <h2 class="accordion-header" id="${elm.id}">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#${elm.id + "Collapse"}" aria-expanded="false" aria-controls="${elm.id + "Collapse"}">
-                ${elm.title}
+                ${elm.title} 
+                <span class="count" id="${elm.id + "count"}"></span> 
             </button>
         </h2>
         <div id="${elm.id + "Collapse"}" class="accordion-collapse collapse " aria-labelledby="${elm.id}"
@@ -198,9 +523,7 @@ mainContent.innerHTML = codeContent.map((elm) => {
             <div class="accordion-body" id="${elm.id + "code"}">
                     ${elm.code.map(e => {
         return `<div class="question-content">
-                            <div>
                                 <input type="checkbox" name="questionid" id="${e.code_title + "question"}" class="${elm.class} checkBOX">
-                            </div>
                             <div class="qtitle text-truncate"><a href="${e.link}" target="_blank">${e.code_title}</a></div>
                         </div>`
     }).join("")
@@ -209,6 +532,10 @@ mainContent.innerHTML = codeContent.map((elm) => {
     </div>
     `
 }).join("")
+
+codeContent.forEach(e => {
+    e.code_len();
+})
 
 $(function () {
     codeContent.forEach(e => {

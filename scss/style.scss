@@ -11,7 +11,7 @@
     background: linear-gradient(to right, rgb(12, 2, 54), rgb(11, 1, 57));
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 
     span {
         font-weight: bold;
@@ -63,7 +63,9 @@
         color: rgb(7, 81, 200);
         background: #c9edf9;
     }
+
 }
+
 
 .question-content {
     display: flex;
@@ -72,11 +74,6 @@
     align-items: center;
     height: 50px;
     transition: all 0.3s ease;
-
-    &:hover {
-        transition: all 0.3s ease;
-        background: rgba(235, 232, 255, 0.807);
-    }
 
     &:first-child {
         border-radius: 4px 4px 0 0;
@@ -138,7 +135,16 @@
     height: 16px;
 }
 
+.color {
+    transition: all 0.5s ease;
+    background: linear-gradient(to left, #2df54d, #1cfe6396);
+}
 
+.count {
+    color: black !important;
+    position: absolute;
+    left: 50%;
+}
 
 @media only screen and (max-width: 450px) {
     .card-content {
