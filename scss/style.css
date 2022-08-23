@@ -130,6 +130,9 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .count {
+    display: none;
+  }
   .card-content {
     display: flex;
     flex-direction: column;
