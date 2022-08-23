@@ -48,11 +48,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -95,11 +98,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -146,11 +152,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -201,11 +210,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -276,11 +288,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -351,11 +366,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -418,11 +436,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
@@ -479,11 +500,14 @@ const codeContent = [
                         num.parentElement.classList.add('color');
 
                     }
-                    if (!num.checked) {
+                    else if (!num.checked) {
                         i--;
-                        document.getElementById(`${this.id + "count"}`).innerHTML = i;
+                        document.getElementById(`${this.id + "count"}`).innerHTML = `${i}/${nums.length}`;
                         num.parentElement.classList.remove('color');
 
+                    }
+                    if (i == 0) {
+                            document.getElementById(`${this.id + "count"}`).innerHTML = ` `;
                     }
                 })
             })
