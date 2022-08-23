@@ -41,7 +41,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -89,7 +88,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -141,7 +139,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -197,7 +194,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -273,7 +269,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -349,7 +344,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -417,7 +411,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
@@ -479,7 +472,6 @@ const codeContent = [
             let i = 0;
             let nums = document.querySelectorAll(`.${this.class}`);
             nums.forEach(num => {
-                console.log(num.parentElement);
                 num.addEventListener("input", () => {
                     if (num.checked) {
                         i++;
