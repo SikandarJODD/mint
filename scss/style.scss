@@ -6,6 +6,24 @@
     padding: 0px;
 }
 
+body {
+    transition: all 0.3s ease;
+}
+
+.darktheme {
+    background-color: rgba(5, 5, 35, 0.964) !important;
+    color: white !important;
+}
+
+.darkthemeY {
+    background-color: rgb(6 2 41 / 95%) !important;
+    color: #ffffffed;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .navbar {
     color: white;
     background: linear-gradient(to right, rgb(12, 2, 54), rgb(11, 1, 57));
@@ -141,15 +159,20 @@
 }
 
 .count {
-    color: black !important;
+    color: black;
     position: absolute;
     left: 50%;
 }
 
+.form-switch {
+    font-size: 1.3rem;
+}
+
 @media only screen and (max-width: 450px) {
-    .count{
+    .count {
         display: none;
     }
+
     .card-content {
         display: flex;
         flex-direction: column;
