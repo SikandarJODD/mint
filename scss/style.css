@@ -5,6 +5,27 @@
   padding: 0px;
 }
 
+body {
+  transition: all 0.3s ease;
+}
+
+.darktheme {
+  background-color: rgba(5, 5, 35, 0.964) !important;
+  color: white !important;
+}
+
+.darkthemeY {
+  background-color: rgba(6, 2, 41, 0.95) !important;
+  color: rgba(255, 255, 255, 0.9294117647);
+}
+
+.lightcolor {
+  color: rgb(58, 168, 252) !important;
+}
+.lightcolor:hover {
+  color: #2df54d !important;
+}
+
 .navbar {
   color: white;
   background: linear-gradient(to right, rgb(12, 2, 54), rgb(11, 1, 57));
@@ -124,9 +145,13 @@
 }
 
 .count {
-  color: black !important;
+  color: black;
   position: absolute;
   left: 50%;
+}
+
+.form-switch {
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 450px) {
