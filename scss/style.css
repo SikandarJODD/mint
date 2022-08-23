@@ -19,10 +19,10 @@ body {
   color: rgba(255, 255, 255, 0.9294117647);
 }
 
-.light {
+.lightcolor {
   color: rgb(58, 168, 252) !important;
 }
-.light:hover {
+.lightcolor:hover {
   color: #2df54d !important;
 }
 
