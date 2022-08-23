@@ -1,6 +1,6 @@
 const codeContent = [
     {
-        title: 'Arrays & Hashing -- <span class="text-warning">LeetCode</span>',
+        title: 'Arrays & Hashing ',
         id: 'a1',
         class: 'check1',
         code: [
@@ -60,7 +60,7 @@ const codeContent = [
         },
     },
     {
-        title: 'Two Pointers -- <span class="text-warning">LeetCode</span>',
+        title: 'Two Pointers',
         id: 'a2',
         class: 'check2',
         code: [
@@ -108,7 +108,7 @@ const codeContent = [
         },
     },
     {
-        title: 'Sliding Window -- <span class="text-warning">LeetCode</span>',
+        title: 'Sliding Window',
         id: 'a3',
         class: 'check3',
         code: [
@@ -160,7 +160,7 @@ const codeContent = [
         },
     },
     {
-        title: 'Sorting -- <span class="text-warning">LeetCode</span>',
+        title: 'Sorting ',
         id: 'a4',
         class: 'check4',
         code: [
@@ -216,7 +216,7 @@ const codeContent = [
         },
     },
     {
-        title: 'String -- <span class="text-primary"> Codechef</span>',
+        title: 'String ',
         id: 'a5',
         class: 'check5',
         code: [
@@ -292,7 +292,7 @@ const codeContent = [
         },
     },
     {
-        title: 'Greedy Algorithms -- <span class="text-primary"> Codechef</span>',
+        title: 'Greedy Algorithms',
         id: 'a6',
         class: 'check6',
         code: [
@@ -368,7 +368,7 @@ const codeContent = [
         },
     },
     {
-        title: 'Data Structures -- <span class="text-primary"> Codechef</span>',
+        title: 'Data Structures',
         id: 'a7',
         class: 'check7',
         code: [
@@ -437,7 +437,7 @@ const codeContent = [
     },
     {
 
-        title: 'Binary Search -- <span class="text-warning">LeetCode</span>',
+        title: 'Binary Search ',
         id: 'a8',
         class: 'check8',
         code: [
