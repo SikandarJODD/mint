@@ -16,7 +16,7 @@ theme.addEventListener("change", () => {
         document.body.classList.add('darktheme');
         accordion.forEach(e => e.classList.add('darkthemeY'))
         questionContent.forEach(e => e.classList.add('darktheme'));
-        qTitle.forEach(e => e.classList.add('text-light'));
+        qTitle.forEach(e => e.classList.add('light'));
         accordionBody.forEach(e => e.classList.add('darktheme'));
         count.forEach(e=>e.classList.add('text-primary'));
     }
@@ -24,7 +24,7 @@ theme.addEventListener("change", () => {
         count.forEach(e=>e.classList.remove('text-primary'));
         accordion.forEach(e => e.classList.remove('darkthemeY'))
         questionContent.forEach(e => e.classList.remove('darktheme'));
-        qTitle.forEach(e => e.classList.remove('text-light'));
+        qTitle.forEach(e => e.classList.remove('light'));
         accordionBody.forEach(e => e.classList.remove('darktheme'));
         console.log("BRO FALSE");
         document.body.classList.remove('darktheme');

@@ -19,6 +19,13 @@ body {
   color: rgba(255, 255, 255, 0.9294117647);
 }
 
+.light {
+  color: rgb(58, 168, 252) !important;
+}
+.light:hover {
+  color: #2df54d !important;
+}
+
 .navbar {
   color: white;
   background: linear-gradient(to right, rgb(12, 2, 54), rgb(11, 1, 57));

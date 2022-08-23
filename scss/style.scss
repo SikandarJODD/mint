@@ -20,6 +20,13 @@ body {
     color: #ffffffed;
 }
 
+.light {
+    color: rgb(58, 168, 252) !important;
+
+    &:hover {
+        color: #2df54d !important;
+    }
+}
 
 .navbar {
     color: white;
