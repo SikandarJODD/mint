@@ -16,10 +16,12 @@ theme.addEventListener("change", () => {
         questionContent.forEach(e => e.classList.add('darktheme'));
         qTitle.forEach(e => e.classList.add('lightcolor'));
         accordionBody.forEach(e => e.classList.add('darktheme'));
-        count.forEach(e=>e.classList.add('text-primary'));
+        count.forEach(e => e.classList.add('text-primary'));
+        document.querySelector('.form-switch label').innerHTML = "Light";
     }
     else {
-        count.forEach(e=>e.classList.remove('text-primary'));
+        document.querySelector('.form-switch label').innerHTML = "Dark";
+        count.forEach(e => e.classList.remove('text-primary'));
         accordion.forEach(e => e.classList.remove('darkthemeY'))
         questionContent.forEach(e => e.classList.remove('darktheme'));
         qTitle.forEach(e => e.classList.remove('lightcolor'));

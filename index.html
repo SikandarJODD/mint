@@ -20,8 +20,9 @@
         <div class="container-fluid ">
             <h1>Competitive <span>Coding</span></h1>
             <div class="form-check form-switch">
+                <label class="form-check-label" for="darktheme">Dark</label>
                 <input class="form-check-input" type="checkbox" role="switch" id="darktheme">
-              </div>
+            </div>
         </div>
     </nav>
     <section class="main-content m-auto w-75 mt-5" id="main-content1">
@@ -35,7 +36,10 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
         integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
 </body>
 
 </html>
